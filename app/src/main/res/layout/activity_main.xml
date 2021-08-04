@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.163" />
 
     <Button
-        android:id="@+id/penjumlahan"
+        android:id="@+id/buttonPenjumlahan"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="32dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <Button
-        android:id="@+id/pengurangan"
+        android:id="@+id/buttonPengurangan"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="12dp"
@@ -68,11 +68,11 @@
         android:layout_marginTop="36dp"
         android:text="-"
         android:textSize="25dp"
-        app:layout_constraintStart_toEndOf="@+id/penjumlahan"
+        app:layout_constraintStart_toEndOf="@+id/buttonPenjumlahan"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <Button
-        android:id="@+id/perkalian"
+        android:id="@+id/buttonPerkalian"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="36dp"
@@ -80,11 +80,11 @@
         android:layout_marginRight="12dp"
         android:text="x"
         android:textSize="25dp"
-        app:layout_constraintEnd_toStartOf="@+id/pembagian"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPembagian"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <Button
-        android:id="@+id/pembagian"
+        android:id="@+id/buttonPembagian"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="36dp"
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pengurangan"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPengurangan"
         app:layout_constraintVertical_bias="0.04" />
 
     <TextView
