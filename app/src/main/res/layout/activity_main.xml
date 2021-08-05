@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MASUKKAN DUA ANGKA"
+        android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +27,7 @@
         android:layout_height="51dp"
         android:ems="10"
         android:hint="Masukkan Angka Pertama"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -40,7 +41,7 @@
         android:layout_height="53dp"
         android:ems="10"
         android:hint="Masukkan Angka Kedua"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,4 +138,16 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonClear"
         app:layout_constraintVertical_bias="0.166" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abdul Rahman Saleh"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextAngka1, editTextAngka2;
     TextView hasilPerhitungan;
     Button penjumlahan, pengurangan, perkalian, pembagian, clear;
-    int angka1, angka2;
+    double angka1, angka2, hasil=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (getNumbers()) {
-                    int hasil = angka1 + angka2;
-                    hasilPerhitungan.setText(Integer.toString(hasil));
+                    hasil = angka1 + angka2;
+                    hasilPerhitungan.setText(Double.toString(hasil));
                 }
             }
         });
@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (getNumbers()) {
-                    int hasil = angka1 - angka2;
-                    hasilPerhitungan.setText(Integer.toString(hasil));
+                    hasil = angka1 - angka2;
+                    hasilPerhitungan.setText(Double.toString(hasil));
                 }
             }
         });
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (getNumbers()) {
-                    int hasil = angka1 * angka2;
-                    hasilPerhitungan.setText(Integer.toString(hasil));
+                    hasil = angka1 * angka2;
+                    hasilPerhitungan.setText(Double.toString(hasil));
                 }
             }
         });
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (getNumbers()) {
-                    double hasil = (angka1 * 1.0) / angka2;
+                    hasil = (angka1 * 1.0) / angka2;
                     hasilPerhitungan.setText(Double.toString(hasil));
                 }
             }
@@ -93,8 +93,8 @@ public class MainActivity extends AppCompatActivity {
             hasilPerhitungan.setText(result);
             return false;
         } else {
-            angka1 = Integer.parseInt(parseAngka1);
-            angka2 = Integer.parseInt(parseAngka2);
+            angka1 = Double.parseDouble(parseAngka1);
+            angka2 = Double.parseDouble(parseAngka2);
         }
         return true;
     }
