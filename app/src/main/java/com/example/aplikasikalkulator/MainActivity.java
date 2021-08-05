@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         String parseAngka1 = editTextAngka1.getText().toString();
         String parseAngka2 = editTextAngka2.getText().toString();
 
-        if ((parseAngka1.equals(null) && parseAngka2.equals(null)) || (parseAngka1.equals("") && parseAngka2.equals(""))) {
+        if ((parseAngka1.equals(null) || parseAngka2.equals(null)) || (parseAngka1.equals("") || parseAngka2.equals(""))) {
             String result = "Mohon isi kedua angka";
             hasilPerhitungan.setText(result);
             return false;
